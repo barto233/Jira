@@ -1,0 +1,205 @@
+Summary,Issue key,Issue id,Issue Type,Status,Project key,Project name,Project type,Project lead,Project lead id,Project description,Priority,Resolution,Assignee,Assignee Id,Reporter,Reporter Id,Creator,Creator Id,Created,Updated,Last Viewed,Resolved,Due date,Votes,Description,Environment,Watchers,Watchers Id,Original estimate,Remaining Estimate,Time Spent,Work Ratio,Σ Original Estimate,Σ Remaining Estimate,Σ Time Spent,Security Level,Attachment,Custom field (Actual end),Custom field (Actual start),Custom field (Change reason),Custom field (Change risk),Custom field (Change type),Custom field (Compass),Custom field (Development),Custom field (Epic Color),Custom field (Epic Name),Custom field (Epic Status),Custom field (Impact),Custom field (Issue color),Custom field (Locked forms),Custom field (Open forms),Custom field (Rank),Custom field (Request Type),Custom field (Start date),Custom field (Story Points),Custom field (Story point estimate),Custom field (Submitted forms),Custom field (Target end),Custom field (Target start),Custom field (Team),Custom field (Total forms),Custom field ([CHART] Date of First Response),Status Category
+Błędnie nazwana kategoria - po wejścia w kategorię DRESSES wyświetla się błędna nazwa subkategorii,TPS-67,10068,Bug,To Do,TPS,testowy projekt scrum,software,Radosław K,5ec7e2c604f34b0c2d54e093,,Medium,,,,Bartek Rykowski,63cc21ba0c615857128e47fc,Bartek Rykowski,63cc21ba0c615857128e47fc,09/Feb/23 6:16 PM,09/Feb/23 6:16 PM,09/Feb/23 6:16 PM,,,0,"Środowisko - produkcja
+
+ 
+
+Kroki:
+
+# Wchodzę na stronę główną sklepu pod adresem www - [https://addons.prestashop.com/demo/FO18147.html|https://addons.prestashop.com/demo/FO18147.html]
+# Wybieram w MENU głównym kategorię 'CASUAL DRESSES”
+# W “Subcategories” jak i w menu po lewej stronie strony www występuję błędna nazwa elementu tj. “P2ACSPRSC02”
+
+
+
+Spodziewany efekt:
+
+Strona powinna wyświetlić prawidłową nazwę kategorii tj “DRESSES”.
+
+
+Dodatkowe informacje:
+
+Do poprawienia elementy w kodzie:
+
+{{<a class=""subcategory-name"" href=""https://etsydemo.knowband.com/en/21-p2acsprsc02""P2ACSPRSC02</a>}}
+
+ 
+
+Screen w załączeniu prezentujący błędny element.",,Bartek Rykowski,63cc21ba0c615857128e47fc,,,,,,,,,09/Feb/23 6:15 PM;63cc21ba0c615857128e47fc;p2a.png;https://testowajirasda.atlassian.net/secure/attachment/10040/p2a.png,,,,,,,,,,,,,,,0|i00002:ur,,,,,,,,,,,To Do
+Brak zdjęcia w Subcategories- po wejścia w kategorię WOMEN brak podstawienia wraz z błędną nazwą kategorii.,TPS-61,10062,Bug,To Do,TPS,testowy projekt scrum,software,Radosław K,5ec7e2c604f34b0c2d54e093,,Medium,,,,Bartek Rykowski,63cc21ba0c615857128e47fc,Bartek Rykowski,63cc21ba0c615857128e47fc,09/Feb/23 6:11 PM,09/Feb/23 6:11 PM,09/Feb/23 6:11 PM,,,0,"Środowisko - produkcja
+
+ 
+
+Kroki:
+
+# Wchodzę na stronę główną sklepu pod adresem www - [https://addons.prestashop.com/demo/FO18147.html|https://addons.prestashop.com/demo/FO18147.html]
+# Wybieram w MENU głównym kategorię 'WOMEN”
+# W “Subcategories” występuję błędna nazwa 3 elementu tj. “BAYCAT1”
+# Ponad to dla subkategorii o błędnej nazwie “EBAYCAT1” nie podstawia się zdjęcie.
+Wyświetlone “no image available”.
+
+
+ 
+
+Spodziewany efekt:
+
+Wyświetlenie poprawnego zdjęcia i poprawnej nazwy kategorii (zmiana EBAYCAT1 na prawidłowa nazwę).
+
+
+Dodatkowe informacje:
+
+Strona nie zaczytuje odpowiednich zdjęć dla przedmiotu dla elemetnu {{<img class=""replace-2x  src=""https://etsydemo.knowband.com/c/en-default-medium_default/ebaycat1.jpg""> }}
+Brak odpowiedniej ścieżki do odpowiedniego zdjęcia.
+Zmiana nazwy kategorii na poprawną w polu 
+
+{{<a class=""subcategory-name"" href=""https://etsydemo.knowband.com/en/12-ebaycat1"">}}
+
+ 
+
+Screen w załączeniu prezentujący błędny element. ",,Bartek Rykowski,63cc21ba0c615857128e47fc,,,,,,,,,09/Feb/23 6:10 PM;63cc21ba0c615857128e47fc;ebaycat1.png;https://testowajirasda.atlassian.net/secure/attachment/10034/ebaycat1.png,,,,,,,,,,,,,,,0|i00002:ui,,,,,,,,,,,To Do
+Błąd wyświetlania zdjęc - nie podstawiają się zdjęcia produktów w kategorii DRESSES ,TPS-51,10051,Bug,To Do,TPS,testowy projekt scrum,software,Radosław K,5ec7e2c604f34b0c2d54e093,,Medium,,,,Bartek Rykowski,63cc21ba0c615857128e47fc,Bartek Rykowski,63cc21ba0c615857128e47fc,09/Feb/23 6:01 PM,09/Feb/23 6:01 PM,09/Feb/23 6:17 PM,,,0,"Środowisko - produkcja
+
+
+
+Kroki:
+
+# Wchodzę na stronę główną sklepu pod adresem www - [https://addons.prestashop.com/demo/FO18147.html|https://addons.prestashop.com/demo/FO18147.html]
+# Wybieram w MENU głównym kategorię 'DRESSES”
+# Nie wyświetlają się zdjęcia przedmiotów w tej kategorii (Listing).
+
+
+
+
+
+Spodziewany efekt:
+
+Dla każdego przedmiotu powinien wyświetlić się dedykowane zdjęcie danego produktu.
+
+
+Dodatkowe informacje:
+
+Strona nie zaczytuje odpowiednich zdjęć dla przedmiotu dla elemetnu {{<img class=""replace-2x img-responsive"" src=""https://etsydemo.knowband.com/10-home_default/printed-dress.jpg"">}}
+Brak odpowiedniej ścieżki do odpowiedniego zdjęcia w “scr=”
+
+
+
+Screen w załaczeniu ",,Bartek Rykowski,63cc21ba0c615857128e47fc,,,,,,,,,09/Feb/23 6:00 PM;63cc21ba0c615857128e47fc;listing.jpg;https://testowajirasda.atlassian.net/secure/attachment/10023/listing.jpg,,,,,,,,,,,,,,,0|i00002:u,,,,,,,,,,,To Do
+Zmiana języka strony - brak tłumaczenia menu głównego z English na Español ,TPS-33,10033,Bug,To Do,TPS,testowy projekt scrum,software,Radosław K,5ec7e2c604f34b0c2d54e093,,Medium,,,,Bartek Rykowski,63cc21ba0c615857128e47fc,Bartek Rykowski,63cc21ba0c615857128e47fc,06/Feb/23 8:57 PM,06/Feb/23 8:57 PM,06/Mar/23 8:30 PM,,,0,"Środowisko - produkcja
+
+
+
+Kroki:
+
+# Wchodzę na stronę główną sklepu pod adresem www - [https://addons.prestashop.com/demo/FO18147.html|https://addons.prestashop.com/demo/FO18147.html]
+# Klikam ""English"" w menu wyboru języka na górze strony.
+# Wybieram ""Español""
+# Brak zmienionych nazw pól w menu głównym 
+
+
+
+Spodziewany efekt:
+
+
+
+Menu główne powinno zmienić język każdego elementu na Hiszpański. 
+
+
+
+Dodatkowe informacje:
+
+Film pokazujący zachowanie strony w załączniku.",,Bartek Rykowski,63cc21ba0c615857128e47fc,,,,,,,,,06/Feb/23 8:55 PM;63cc21ba0c615857128e47fc;jezyk.mp4;https://testowajirasda.atlassian.net/secure/attachment/10009/jezyk.mp4,,,,,,,,,,,,,,,0|i00002:t,,,,,,,,,,,To Do
+Galeria zdjęć - nie działa przekierowanie po kliknięciu w zdjęcie -45% OFF,TPS-13,10013,Bug,To Do,TPS,testowy projekt scrum,software,Radosław K,5ec7e2c604f34b0c2d54e093,,Medium,,,,Bartek Rykowski,63cc21ba0c615857128e47fc,Bartek Rykowski,63cc21ba0c615857128e47fc,06/Feb/23 7:36 PM,06/Feb/23 7:36 PM,06/Feb/23 8:18 PM,,,0,"Środowisko - produkcja
+
+ 
+
+Kroki:
+
+# Wchodzę na stronę główną sklepu pod adresem www - [https://addons.prestashop.com/demo/FO18147.html|https://addons.prestashop.com/demo/FO18147.html]
+# Klikam w obraz “45% OFF”
+# Brak przekierowania do ofert z 45% rabatem.
+
+ 
+
+Spodziewany efekt
+
+Po kliknięciu w obrazek strona powinna przenieść dalej do ofert z 45% rabatem. Link powinien funkcjonować.
+
+Najpewniej błąd w hiperlinku.
+
+ 
+
+Dodatkowe informacje:
+
+w załączniku film.",,Bartek Rykowski,63cc21ba0c615857128e47fc,,,,,,,,,06/Feb/23 7:36 PM;63cc21ba0c615857128e47fc;przycisk.mp4;https://testowajirasda.atlassian.net/secure/attachment/10004/przycisk.mp4,,,,,,,,,,,,,,,0|i00002:r,,,,,,,,,,,To Do
+Galeria zdjęć - nie działa przekierowanie po kliknięciu w zdjęcie -25% OFF,TPS-11,10011,Bug,To Do,TPS,testowy projekt scrum,software,Radosław K,5ec7e2c604f34b0c2d54e093,,Medium,,,,Bartek Rykowski,63cc21ba0c615857128e47fc,Bartek Rykowski,63cc21ba0c615857128e47fc,06/Feb/23 7:35 PM,06/Feb/23 7:35 PM,06/Feb/23 7:35 PM,,,0,"Środowisko - produkcja 
+
+
+
+Kroki: 
+
+# Wchodzę na stronę główną sklepu pod adresem www - [https://addons.prestashop.com/demo/FO18147.html|https://addons.prestashop.com/demo/FO18147.html] 
+#  Klikam w obraz “25% OFF”
+# Brak przekierowania do ofert z 25% rabatem. 
+
+
+
+Spodziewany efekt 
+
+Po kliknięciu w obrazek strona powinna przenieść dalej do ofert z 25% rabatem. Link powinien funkcjonować.
+
+Najpewniej błąd w hiperlinku. 
+
+
+
+Dodatkowe informacje:
+
+w załączniku film. ",,Bartek Rykowski,63cc21ba0c615857128e47fc,,,,,,,,,06/Feb/23 7:34 PM;63cc21ba0c615857128e47fc;przycisk.mp4;https://testowajirasda.atlassian.net/secure/attachment/10003/przycisk.mp4,,,,,,,,,,,,,,,0|i00002:i,,,,,,,,,,,To Do
+"Galeria zdjęć - nie działa przycisk ""shop now""",TPS-7,10007,Bug,To Do,TPS,testowy projekt scrum,software,Radosław K,5ec7e2c604f34b0c2d54e093,,Medium,,,,Bartek Rykowski,63cc21ba0c615857128e47fc,Bartek Rykowski,63cc21ba0c615857128e47fc,06/Feb/23 7:31 PM,06/Feb/23 7:31 PM,06/Feb/23 7:31 PM,,,0,"Środowisko - produkcja 
+
+
+
+Kroki: 
+
+
+
+# Wchodzę na stronę główną sklepu pod adresem www - [https://addons.prestashop.com/demo/FO18147.html|https://addons.prestashop.com/demo/FO18147.html] 
+#  Klikam w przycisk “shop now” na największym zdjęciu karuzeli. 
+# Przycisk nie przekierowuje użytkownika. 
+
+
+
+Spodziewany efekt 
+
+Po kliknięciu przycisku “shop now” strona powinna przenieść dalej. Link powinien funkcjonować.
+
+Najpewniej błąd w hiperlinku. 
+
+
+
+Dodatkowe informacje: 
+
+screen w załączeniu. ",,Bartek Rykowski,63cc21ba0c615857128e47fc,,,,,,,,,06/Feb/23 7:31 PM;63cc21ba0c615857128e47fc;2.png;https://testowajirasda.atlassian.net/secure/attachment/10002/2.png,,,,,,,,,,,,,,,0|i00002:,,,,,,,,,,,To Do
+Proces logowanie - brak możliwości logowanie konta użytkownika,TPS-6,10006,Bug,To Do,TPS,testowy projekt scrum,software,Radosław K,5ec7e2c604f34b0c2d54e093,,Medium,,,,Bartek Rykowski,63cc21ba0c615857128e47fc,Bartek Rykowski,63cc21ba0c615857128e47fc,06/Feb/23 7:21 PM,06/Feb/23 7:21 PM,06/Feb/23 7:24 PM,,,0,"Środowisko - produkcja.
+
+
+
+Kroki: 
+
+# Wchodzę na stronę [https://addons.prestashop.com/demo/FO18147.html|https://addons.prestashop.com/demo/FO18147.html] 
+# Klikam link “sign in” 
+# wpisuję dane do logowania - login: “test@test.pl” hasło ”test123”
+# klikam “sign in” 
+# Strona zwraca bład “ Authentication failed.” 
+
+
+
+Spodziewany efekt: 
+
+
+
+Po uzupełnieniu poprawnymi danymi (email i hasło) strona powinna umożliwić rejestrację nowego użytkownika. 
+
+
+
+Dodatkowe informacje. 
+
+Screen a błędem w załączeniu. ",,Bartek Rykowski,63cc21ba0c615857128e47fc,,,,,,,,,06/Feb/23 7:20 PM;63cc21ba0c615857128e47fc;1.png;https://testowajirasda.atlassian.net/secure/attachment/10001/1.png,,,,,,,,,,,,,,,0|i00001:,,,,,,,,,,,To Do
